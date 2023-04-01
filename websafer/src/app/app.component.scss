@@ -1,0 +1,96 @@
+
+$main-color: #111111;
+$text-color: #0CEC00;
+
+header
+{
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  color: $text-color;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main
+{
+  width: 100vw;
+  height: 100vh;
+
+  #left
+  {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    background-color: $main-color;
+  }
+
+  #triangle
+  {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    z-index: 1000;
+    width: 0;
+    height: 0;
+    border-top: 100vh solid $main-color;
+    border-right: 5.5vw solid transparent;
+  }
+
+  #right
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-image: url(/assets/images/hacker.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+nav
+{
+  position: absolute;
+  bottom: 10px;
+  right: 51vw;
+  display: flex;
+  .buttons {
+    box-shadow: 0px 0px 0px 2px #101010;
+    background:linear-gradient(to bottom, #434343 5%, #202020 100%);
+    background-color:#202020;
+    border-radius:42px;
+    border:1px solid #051c06;
+    display:inline-block;
+    cursor:pointer;
+    color:#00ff09;
+    font-family:Arial;
+    font-size:21px;
+    padding:6.5px 9px;
+    margin: 0px 6px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #005700;
+  }
+  .buttons:hover {
+    background:linear-gradient(to bottom, #202020 5%, #434343 100%);
+    background-color:#202020;
+  }
+  .buttons:active {
+    position:relative;
+    top:1px;
+  }
+
+}
+
+footer
+{
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 60%;
+  color: rgb(140, 140, 140);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+

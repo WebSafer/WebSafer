@@ -1,3 +1,4 @@
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'websafer';
+  faRight = faArrowRight;
+  faLeft = faArrowLeft;
 }
