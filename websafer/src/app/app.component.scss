@@ -7,6 +7,7 @@ header
   position: absolute;
   top: 18px;
   left: 30px;
+  font-size: 120%;
   color: $text-color;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,13 +16,14 @@ main
 {
   width: 100vw;
   height: 100vh;
-
+  color: $text-color;
   #left
   {
     display: flex;
     width: 50vw;
-    height: 100vh;
+    height: calc(100% - 50px);
     background-color: $main-color;
+    padding-top: 50px;
   }
 
   #triangle
@@ -35,19 +37,6 @@ main
     border-top: 100vh solid $main-color;
     border-right: 5.5vw solid transparent;
   }
-
-  #right
-  {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50vw;
-    height: 100vh;
-    background-image: url(/assets/images/hacker.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 nav
@@ -56,31 +45,6 @@ nav
   bottom: 10px;
   right: 51vw;
   display: flex;
-  .buttons {
-    box-shadow: 0px 0px 0px 2px #101010;
-    background:linear-gradient(to bottom, #434343 5%, #202020 100%);
-    background-color:#202020;
-    border-radius:42px;
-    border:1px solid #051c06;
-    display:inline-block;
-    cursor:pointer;
-    color:#00ff09;
-    font-family:Arial;
-    font-size:21px;
-    padding:6.5px 9px;
-    margin: 0px 6px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #005700;
-  }
-  .buttons:hover {
-    background:linear-gradient(to bottom, #202020 5%, #434343 100%);
-    background-color:#202020;
-  }
-  .buttons:active {
-    position:relative;
-    top:1px;
-  }
-
 }
 
 footer
@@ -93,4 +57,11 @@ footer
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+.disable-selection {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
