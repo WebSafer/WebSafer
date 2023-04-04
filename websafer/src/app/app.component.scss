@@ -65,3 +65,48 @@ footer
         -ms-user-select: none;
             user-select: none;
 }
+
+
+.blink
+{
+	-webkit-animation: blink-text 1500ms linear infinite;
+	-moz-animation: blink-text 1500ms linear infinite;
+	-ms-animation: blink-text 1500ms linear infinite;
+	-o-animation: blink-text 1500ms linear infinite;
+	 animation: blink-text 1500ms linear infinite;
+}
+@-webkit-keyframes blink-text
+{
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink-text
+{
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink-text
+{
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink-text
+{
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink-text
+{
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
