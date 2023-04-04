@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from '../services/page.service';
 
 @Component({
   selector: 'app-image',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppImageComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  page:number = 0;
+
+  constructor(private pageService: PageService) { }
+
+  ngOnInit(): void
+  {
+    this.pageService.getPage().subscribe(page => {this.page = page;});
   }
 
 }

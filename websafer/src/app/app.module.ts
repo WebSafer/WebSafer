@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppButtonsComponent } from './app-buttons/app-buttons.component';
 import { AppContentComponent } from './app-content/app-content.component';
 import { AppImageComponent } from './app-image/app-image.component';
+import { PageService } from './services/page.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { AppImageComponent } from './app-image/app-image.component';
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [PageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
