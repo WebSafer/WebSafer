@@ -8,13 +8,15 @@ import { AppButtonsComponent } from './app-buttons/app-buttons.component';
 import { AppContentComponent } from './app-content/app-content.component';
 import { AppImageComponent } from './app-image/app-image.component';
 import { PageService } from './services/page.service';
+import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppButtonsComponent,
     AppContentComponent,
-    AppImageComponent
+    AppImageComponent,
+    PasswordGeneratorComponent
   ],
   imports: [
     BrowserModule,
