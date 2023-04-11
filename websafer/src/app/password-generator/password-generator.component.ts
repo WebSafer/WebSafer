@@ -19,7 +19,7 @@ export class PasswordGeneratorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  generatePassword()
+  generatePassword(): any
   {
     let chars: string = '';
     if(this.AZ)
@@ -34,6 +34,10 @@ export class PasswordGeneratorComponent implements OnInit {
     {
       chars=chars+'0123456789'
     }
+    if(chars=='')
+    {
+      return 0
+    }
     let password = '';
     for (let i = 0; i < this.lenval; i++) {
       const randomIndex = Math.floor(Math.random() * chars.length);
@@ -41,6 +45,7 @@ export class PasswordGeneratorComponent implements OnInit {
     }
     this.passwd=password;
     this.checkpasswdstre()
+    return 1
   }
 
 
