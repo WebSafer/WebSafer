@@ -19,9 +19,34 @@ export class PasswordGeneratorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  generatePassword()
+  {
+    let chars: string = '';
+    if(this.AZ)
+    {
+      chars=chars+'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    }
+    if(this.az)
+    {
+      chars=chars+'abcdefghijklmnopqrstuvwxyz'
+    }
+    if(this.num)
+    {
+      chars=chars+'0123456789'
+    }
+    let password = '';
+    for (let i = 0; i < this.lenval; i++) {
+      const randomIndex = Math.floor(Math.random() * chars.length);
+      password += chars[randomIndex];
+    }
+    this.passwd=password;
+    this.checkpasswdstre()
+  }
+
+
   checkpasswdstre()
   {
-    if(this.passwd.length<7)
+    if(this.passwd.length<8)
     {
       this.passwdstr = "Bad"
     }
@@ -56,14 +81,5 @@ export class PasswordGeneratorComponent implements OnInit {
   numchange()
   {
     this.num = !this.num;
-  }
-
-  generate()
-  {
-    console.log(this.lenval);
-    console.log(this.passwd);
-    console.log(this.AZ);
-    console.log(this.az);
-    console.log(this.num);
   }
 }
