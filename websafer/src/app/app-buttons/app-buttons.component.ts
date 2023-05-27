@@ -12,7 +12,7 @@ export class AppButtonsComponent implements OnInit {
   faRight = faArrowRight;
   faLeft = faArrowLeft;
   page:number = 0;
-  maxpage:number = 9;
+  maxpage:number = 13;
 
   constructor(private pageService: PageService) { }
 

@@ -9,3 +9,14 @@
   background-position: center;
   background-size: cover;
 }
+
+@media (max-width: 1450px)
+{
+  #right
+  {
+    position: unset;
+    width: 100vw;
+    height: 50vh;
+  }
+
+}

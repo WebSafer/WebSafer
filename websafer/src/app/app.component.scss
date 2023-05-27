@@ -14,6 +14,7 @@ header
 
 main
 {
+  display: flex;
   width: 100vw;
   height: 100vh;
   color: $text-color;
@@ -21,9 +22,9 @@ main
   {
     display: flex;
     width: 50vw;
-    height: calc(100% - 50px);
+    height: calc(100vh - 60px);
     background-color: $main-color;
-    padding-top: 50px;
+    padding-top: 60px;
   }
 
   #triangle
@@ -37,14 +38,6 @@ main
     border-top: 100vh solid $main-color;
     border-right: 5.5vw solid transparent;
   }
-}
-
-nav
-{
-  position: absolute;
-  bottom: 10px;
-  right: 51vw;
-  display: flex;
 }
 
 footer
@@ -109,4 +102,30 @@ footer
 	50% { opacity: 1; }
 	50.01% { opacity: 0; }
 	100% { opacity: 0; }
+}
+
+@media (max-width: 1450px)
+{
+  main
+  {
+    height: 100%;
+    display: block;
+    #left
+    {
+      width: 100vw;
+      display: block;
+    }
+
+    #triangle
+    {
+      display: none;
+    }
+
+  }
+
+  footer
+  {
+    top: 1px;
+    height: 15px;
+  }
 }
