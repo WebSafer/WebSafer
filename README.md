@@ -1,4 +1,4 @@
-<h1 align="left">WebSafer</h1>
+<h1 align="left">🌍 WebSafer</h1>
 
 ###
 
@@ -9,6 +9,7 @@
 <div align="left">
 <p>This is a website created using the Angular framework, containing short tips on cybersecurity and increasing your online security.</p>
 <p>The website was made as part of a project during an English lesson at the PUT university.</p>
+<a href="https://websafer.github.io/">🌍 Link to the website</a>
 </div>
 
 ###
